@@ -31,8 +31,10 @@
             align-items: center;
         }
         .videos iframe {
-            width: 990px;
-            height: 600px;
+            width: 100%;
+            max-width: 990px;
+            height: auto;
+            aspect-ratio: 16 / 9;
             margin: 10px 0;
         }
         .images {
@@ -41,8 +43,9 @@
             flex-wrap: wrap;
         }
         .images img {
-            width: 200px;
-            height: 350px;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
             object-fit: cover;
             margin: 10px;
         }
@@ -59,10 +62,20 @@
         }
         .text {
             flex: 1;
-            padding-right: 10px; /* Ajuste del padding para acercar el logo */
-            text-align: center; /* Centra el texto dentro del contenedor .text */
+            padding-right: 10px;
+            text-align: center;
         }
-       
+        @media (min-width: 600px) {
+            .videos iframe {
+                width: 90%;
+                max-width: 990px;
+            }
+        }
+        @media (min-width: 768px) {
+            .images img {
+                width: calc(33.333% - 20px);
+            }
+        }
     </style>
 </head>
 <body>
@@ -76,20 +89,15 @@
     <div class="text">
         <p>WINS DE NUESTROS SOCIOS</p>
     </div>
-    
     <div class="section images">
         <img src="/img/22.jpg" alt="Imagen 1">
         <img src="/img/Imagen de WhatsApp 2024-07-21 a las 18.08.46_5f74b369.jpg" alt="Imagen 2">
-        <img src="image3.jpg" alt="Imagen 3">
-        <img src="image4.jpg" alt="Imagen 4">
+        <img src="/img/22.jpg" alt="Imagen 3">
+        <img src="/img/Imagen de WhatsApp 2024-07-21 a las 18.08.46_5f74b369.jpg" alt="Imagen 4">
         <img src="/img/22.jpg" alt="Imagen 1">
         <img src="/img/Imagen de WhatsApp 2024-07-21 a las 18.08.46_5f74b369.jpg" alt="Imagen 2">
-        <img src="image3.jpg" alt="Imagen 3">
-        <img src="image4.jpg" alt="Imagen 4">
+        <img src="/img/Imagen de WhatsApp 2024-07-21 a las 18.08.46_5f74b369.jpg" alt="Imagen 4">
         <img src="/img/22.jpg" alt="Imagen 1">
-        <img src="/img/Imagen de WhatsApp 2024-07-21 a las 18.08.46_5f74b369.jpg" alt="Imagen 2">
-        <img src="image3.jpg" alt="Imagen 3">
-        <img src="image4.jpg" alt="Imagen 4">
         <img src="/img/Imagen de WhatsApp 2024-07-21 a las 18.08.46_5f74b369.jpg" alt="Imagen 2">
     </div>
     <div class="section button-container">
