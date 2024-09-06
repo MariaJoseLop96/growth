@@ -76,26 +76,173 @@
                 width: calc(33.333% - 20px);
             }
         }
+
+
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #888383; /* Color gris */
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            margin: auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-bottom: 20px; /* Espacio entre los recuadros */
+        }
+        .description {
+            flex: 1;
+            margin-right: 20px;
+            font-size: 18px;
+            color: #333;
+           
+        }
+        .video {
+            flex: 1;
+          
+        }
+        iframe {
+            width: 100%;
+            height: 300px; /* Puedes ajustar la altura según sea necesario */
+            border: none;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 10px 0 30px 0;
+            color: #bbb;
+        }
+        .highlight {
+            color: #ff3333;
+            text-decoration: underline;
+        }
+        .icon {
+            font-size: 50px;
+            margin: 20px 0;
+        }
+        .step {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .contenedorgeneral{
+            background-color: #000; /* Fondo negro */
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
     </style>
 </head>
 <body>
     <div class="header">
         <img src="./img/images/banner5.png" alt="Banner">
     </div>
+   
+    <div class="contenedorgeneral">
+    <!-- encabezado -->
+    <!-- <h1>Para <span class="highlight">Confirmar tu Reserva</span>, es necesario que veas este corto vídeo y <span class="highlight">termines los pasos</span> a seguir.</h1>
+    <h2>Para que ambos no perdamos nuestro tiempo... es imprescindible que veas el vídeo y sigas correctamente los pasos.</h2> -->
+    
+
+    <h1>Para <span class="highlight">Confirmar tu Reserva</span>, es necesario que veas este corto vídeo 
+    <h2>Para que ambos no perdamos nuestro tiempo... es imprescindible que veas el vídeo y sigas correctamente los pasos.</h2>
+    <!-- Icono de la mano -->
+   
+    
+    <div class="step">PASO #1</div>
+    <div class="step">MIRÁ EL SIGUIENTE VIDEO PARA CONFIRMAR TU LLAMADA</div>
+
+    </div>
+
+
     <div class="section videos">
-        <iframe src="https://www.youtube.com/embed/T4XGnDRH_4Q?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/LPVLzU3545A?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/ttg05RaqYXw"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+
+        <div class="step">Video #1</div>
+        <div class="step">Lanzamientos</div>
+      
+        <iframe src="https://www.youtube.com/embed/RVCLovDZpck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       
+        <div class="step">Video #2</div>
+        <div class="step">Como escalar, posicionar y monetizar tu audiencia</div>
+       
+       
+        <iframe src="https://www.youtube.com/embed/AnPsKFLTKmA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="text">
-        <p>WINS DE NUESTROS SOCIOS</p>
+        <h2>Entrevistas y metodologias de nuestros clientes</h2>
+        <h2>Ninguno de ellos tuvo marca personal a la hora de hacerlas</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="description">
+            Agustina Nexo links
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/pVE3EMamZmY" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <div class="description">
+            Denis 
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/T4XGnDRH_4Q?autoplay=0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <div class="description">
+            Agustina Nexo links - Metodologia
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/LPVLzU3545A?autoplay=0" allowfullscreen></iframe>
+        </div>
+    </div>
+     <!-- entrevista facu
+     <div class="container">
+        <div class="description">
+            Facundo - Enjoy Our Life
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div>
+     </div>
+       -->
+
+
+
+
+
+
+
+    <div class="text">
+        <h2>WINS DE NUESTROS SOCIOS</h2>
+        <h2>Ninguno de ellos tuvo marca personal a la hora de hacerlas</h2>
     </div>
     <div class="section images">
+        <img src="./img/images/1200.jpg" alt="Imagen 1">
+        <img src=" ./img/images/500.jpg" alt="Imagen 1">
         <img src="./img/images/22.jpg" alt="Imagen 1">
         <img src="./img/images/1.jpg" alt="Imagen 1">  
+        <img src="./img/images/2000.jpg" alt="Imagen 1">
         <img src=" ./img/images/3.jpg" alt="Imagen 1">
         <img src="./img/images/400.jpg" alt="Imagen 1">
         <img src="./img/images/699.jpg" alt="Imagen 1">
-        <img src="./img/images/22.jpg" alt="Imagen 1">
+        <img src="./img/images/65.jpg" alt="Imagen 1">
+        <img src="./img/images/210.jpg" alt="Imagen 1">
+        <img src="./img/images/213.jpg" alt="Imagen 1">  
+      
+  
      
     </div>
     <div class="section button-container">
